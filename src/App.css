@@ -1,0 +1,271 @@
+/* Global Style */
+.App {
+  text-align: center;
+  background-color: #303339;
+}
+
+.section-title {
+  font-size: 4vh;
+  margin-top: 1vh;
+  color: white;
+  text-shadow: 1px 1px 7px rgb(0, 0, 0);
+  min-width: 1000px;
+  height: 100%;
+}
+
+/* Dynamic Contents */
+th {
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  padding : 3vh;
+}
+
+.dynamic-content {
+  color: white;
+  padding: 3vh 1vw;
+}
+
+.dynamic-link {
+  color: white;
+  padding: 1vh;
+  text-decoration: none;
+  
+}
+
+.table-center {
+  margin: 0 auto;
+  min-width: 1000px;
+  height: 100%;
+  width: 90%;
+}
+
+.td-btn {min-width: 200px;}
+
+#phase {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#activity {
+  font-size: 20px;
+}
+
+#notes {
+  font-weight: lighter;
+}
+
+.truncate {
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 30ch;
+}
+
+#show-activity {
+  font-size: 25px;
+  color: white;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+#show-phase {
+  font-size: 35px;
+  color: white;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+#notes-container {
+  max-width: 700px;
+  margin: auto;
+  background-color: #282c34;
+  box-shadow: 0px 0px 15px black;
+  margin-top: 50px;
+  border-radius: 3%;
+  color: rgb(214, 214, 214);
+  font-weight: lighter;
+  font-size: 25px;
+}
+
+.show-container {
+  text-align: center;
+  min-width: 1000px;
+  height: 100%;
+}
+
+/* Header */
+.App-header {
+  min-width: 1000px;
+  height: 100%;
+  background-color: #303339;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  animation: changing-color-font 120s infinite;
+}
+/* Navbar */
+.navbar {
+  background-color: #282c34;
+  min-width: 1000px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  box-shadow: 0px 0px 15px black;
+}
+.navbar-li {
+  float: left;
+}
+.navbar-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.navbar-a,
+.navbar-li {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 2vh 5vh;
+  text-decoration: none;
+  text-shadow: 0px 0px 15px rgb(0, 0, 0);
+}
+.navbar-li .navbar-a:hover {
+  animation: changing-color-font-navbar 1s infinite;
+}
+
+/* Btn */
+
+.btn-interactive {
+  width: 80px;
+  height: 40px;
+  box-shadow: 0px 0px 20px #161718;
+  background-color: #414246;
+  border-color: transparent;
+}
+
+#deleteBtn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px #161718;
+  background-color: #414246;
+  border-color: transparent;
+}
+
+#deleteBtn:hover{
+  animation: pulse 0.5s infinite;
+  background-color: rgb(172, 23, 23);
+  box-shadow: 0 0 20px rgb(168, 4, 4);
+  border: black;
+  color: rgb(255, 255, 255);
+}
+
+#editBtn:hover {
+  animation: pulse 0.5s infinite;
+  background-color: rgb(188, 130, 21);
+  box-shadow: 0 0 20px rgb(174, 107, 0);
+  border: black;
+  color: rgb(255, 255, 255);
+}
+
+#showBtn:hover {
+  animation: pulse 0.5s infinite;
+  background-color: rgb(27, 142, 71);
+  box-shadow: 0 0 20px rgb(0, 174, 32);
+  border: black;
+  color: rgb(255, 255, 255);
+}
+
+/* Forms */
+.form-group {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    padding : 3vh;
+    min-width: 900px;
+    height: 100%;
+}
+
+.form-control {
+  box-shadow: 0px 0px 5px black;
+  background-color: #282c34;
+  border-color: transparent;
+  height: 30px;
+  color: white;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.form-btn {
+  width: 150px;
+  height: 40px;
+  box-shadow: 0px 0px 20px #161718;
+  background-color: #414246;
+  border-color: transparent;
+  color: white;
+}
+
+.form-btn:hover {
+  animation: pulse 0.5s infinite;
+  background-color: rgb(27, 142, 71);
+  box-shadow: 0 0 20px rgb(0, 174, 32);
+  border: black;
+  color: rgb(255, 255, 255);
+}
+
+/* Keyframes */
+/* Header Animation */
+@keyframes changing-color-font {
+  0% {text-shadow: 0px 0px 30px rgb(255, 255, 255);}
+  20% {text-shadow: 0px 0px 30px white;}
+  25% {text-shadow: 20px 0px 10px rgb(0, 0, 0);}
+  30% {text-shadow: 0px 0px 30px white;}
+  35% {text-shadow: 20px 20px 10px rgb(0, 0, 0);}
+  40% {text-shadow: 0px 0px 30px white;}
+  45% {text-shadow: 0px 20px 10px rgb(0, 0, 0);}
+  50% {text-shadow: 0px 0px 30px white;}
+  55% {text-shadow: -20px 20px 10px rgb(0, 0, 0);}
+  60% {text-shadow: 0px 0px 30px white;}
+  65% {text-shadow: -20px 0px 10px rgb(0, 0, 0);}
+  70% {text-shadow: 0px 0px 30px white;}
+  75% {text-shadow: -20px -20px 10px rgb(0, 0, 0);}
+  80% {text-shadow: 0px 0px 30px white;}
+  85% {text-shadow: 0px -20px 10px rgb(0, 0, 0);}
+  90% {text-shadow: 0px 0px 30px white;}
+  95% {text-shadow: 20px -20px 10px rgb(0, 0, 0);}
+  100% {text-shadow: 0px 0px 30px white;}
+}
+
+/* Navbar Animation */
+
+@keyframes changing-color-font-navbar {
+  0% {text-shadow: 0px 0px 15px rgb(0, 0, 0);}
+  50% {text-shadow: 0px 0px 15px rgb(255, 255, 255);}
+  100% {text-shadow: 0px 0px 15px rgb(0, 0, 0);}
+}
+
+/* Button Animation */
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0px 0px 20px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+	}
+}
