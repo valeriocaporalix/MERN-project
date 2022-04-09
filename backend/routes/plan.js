@@ -28,7 +28,6 @@ router.route('/add').post((req,res) => {
 });
 
 
-// MAYBE NOT
 router.route('/:id').get((req, res) => {
     Plan.findById(req.params.id)
         .then(plan => res.json(plan))
